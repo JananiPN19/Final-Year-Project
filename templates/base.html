@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>MS Forecast - Predict MS </title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'predict/gre_predict.css' %}" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="C:\Users\P.Janani\Downloads\favicon_io\favicon-32x32.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fa fa-bars"></i>
+  </label>
+  <a class="brand-logo"><img src="{% static 'predict/myprojlogo1.png' %}"></a>
+  <ul>
+    <li><a href="#home"><i class="fa fa-home" style="font-size: 22px;"></i>Home</a></li>
+    <li><a class="active" href="#predict"><i class="fa fa-graduation-cap" style="font-size: 22px;"></i>Predict MS</a></li>
+    <li><a href="#help"><i class="fa fa-question-circle-o" style="font-size: 22px;"></i>Help</a></li>
+  </ul>
+</nav>
+  {% block content %}
+  {% endblock %}
+</html>
