@@ -34,6 +34,8 @@ def gre_predict(request):
         loaded_model = pickle.load(open('predict\\static\\predict\\final_model.pkl', 'rb'))
         out = loaded_model.predict(X=ds)
 
-        data['out'] = out
-
-        return render(request, 'predict/gre_predict.html', data)
+        #data['out'] = out
+        if out == 1:
+            return render(request, 'predict/congrats.html', {})
+        else:
+            return render(request, 'predict/failure.html', {})
