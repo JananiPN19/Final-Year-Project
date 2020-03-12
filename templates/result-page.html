@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'result-page.css' %}">
+    <br><br><br>
+    <div id="university-div">
+        <table id="university-table">
+            <tr>
+                <th class="text t-head">UNIVERSITIES</th>
+                <th class="text t-head">WEBSITE</th>
+            </tr>
+						{% for info in college_info %}
+            <tr>
+                <td class="text t-content">{{ info.0 }}</td>
+                <td class="text t-content"><a href="{{info.1}}">{{ info.1 }}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

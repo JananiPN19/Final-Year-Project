@@ -1,38 +1,22 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
-				<div id="hero-overlay">
-					<div class="login-page">
-						<img src="{% static 'predict/gra1.jpg' %}" class="avatar">
-						<div class="form">
-							<form class="register-form" action="gre_predict" enctype="multipart/form-data" method="post">
-								{% csrf_token %}
-								<p>GRE Score</p>
-								<input type="text" name="gre_score" id="" placeholder="Enter GRE Score"/>
-								<p>CGPA Score</p>
-								<input type="text" name="cgpa" id="" placeholder="Enter CGPA">
-								<p>TOEFL Score</p>
-								<input type="text" name="toefl_score" id="" placeholder="Enter TOEFL Score">
-								<p>University Rating</p>
-								<input type="text" name="univ_rating" id="" placeholder="Enter University Rating">
-								<p>Research</p>
-								<input type="text" name="research" id="" placeholder="Enter Research done">
-								<button class="button"><span>SUBMIT</span></button>
-								<!--<button class="button"> <a class="btn btn-primary"  href="#container" data-reveal-id="exampleModal">Know your result</a></button>
-		                    <div id="container">
-		                        <div id="exampleModal" class="reveal-modal">
-		                             <h2>Prediction</h2>
-		                            <p style="font-size: 20px;">
-		                                {% for i in out %}
-		                                    {% if i == 1 %}
-		                                        <p style="font-size: 20px;"> Success! </p>
-		                                    {% else %}
-		                                        <p style="font-size: 20px;"> Better luck next time! </p>
-		                                    {% endif %}
-		                                {% endfor %}
-
-		                     			<a href="#" class="close-reveal-modal">×</a>
-		                        </div>
-		                    </div>-->
-										</form>
-						{% endblock %}
+	{% block content %}
+						<div id="hero-overlay">
+							<div class="login-page">
+								<img src="{% static 'predict/gra1.jpg' %}" class="avatar">
+								<div class="form">
+									<form class="register-form" action="gre_predict" enctype="multipart/form-data" method="post">
+										{% csrf_token %}
+										<p>GRE Score</p>
+										<input type="text" name="gre_score" id="" placeholder="Enter GRE Score"/>
+										<p>CGPA Score</p>
+										<input type="text" name="cgpa" id="" placeholder="Enter CGPA">
+										<p>TOEFL Score</p>
+										<input type="text" name="toefl_score" id="" placeholder="Enter TOEFL Score">
+										<p>University Rating</p>
+										<input type="text" name="univ_rating" id="" placeholder="Enter University Rating">
+										<p>Research</p>
+										<input type="text" name="research" id="" placeholder="Enter Research done">
+										<button class="button"><span>SUBMIT</span></button>
+									</form>
+	{% endblock %}

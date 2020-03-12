@@ -5,10 +5,12 @@ import numpy as np
 import pickle
 
 # Create your views here.
+
 def gre(request):
     return render(request, 'predict/gre_predict.html', {})
 
 def gre_predict(request):
+    global backend_gre
     if request.method == 'POST':
         backend_gre = request.POST.get('gre_score')
         backend_toefl = request.POST.get('toefl_score')
@@ -34,8 +36,23 @@ def gre_predict(request):
         loaded_model = pickle.load(open('predict\\static\\predict\\final_model.pkl', 'rb'))
         out = loaded_model.predict(X=ds)
 
-        #data['out'] = out
         if out == 1:
             return render(request, 'predict/congrats.html', {})
         else:
             return render(request, 'predict/failure.html', {})
+
+def college_display(request):
+    df = pd.read_csv('predict\\static\\colleges.csv')
+    gre_range = list(set(df['Gre_Range']))
+    for i in gre_range:
+        start,end = map(int,i.split('-'))
+        college_list = df[df.Gre_Range==i]
+        college_name = list(college_list['College_name'])
+        college_site = list(college_list['College_Site'])
+        college_info = []
+        for l in range(len(college_name)):
+            college_info.append([college_name[l],college_site[l]])
+        college_data = {'college_info':college_info}
+        if int(backend_gre) in range(start,end+1):
+            return render(request,'result-page.html',college_data)
+            break

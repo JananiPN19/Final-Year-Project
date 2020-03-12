@@ -5,13 +5,14 @@
 	list-style: none;
 	text-decoration: none;
 	font-family: 'Work Sans',sans-serif;
+	text-align: center;
 }
 
 body{
 	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.4)),url("https://www.thecompleteuniversityguide.co.uk/media/4830503/istock-120872205.jpg") no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 1024px;
+	height: 1000px;
 	background-position: center;
 }
 
@@ -225,7 +226,6 @@ a.active, a:hover{
 }
 
 @media (max-width: 700px){
-
 	.brand-logo{
 		display: block;
 		margin: 0 auto;
