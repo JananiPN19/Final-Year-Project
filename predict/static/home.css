@@ -1,0 +1,392 @@
+*{
+	font-family: 'Work Sans',sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.4)),url("https://www.thecompleteuniversityguide.co.uk/media/4830503/istock-120872205.jpg") no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 1024px;
+	background-position: center;
+}
+
+nav{
+	background: transparent;
+	height: 100px;
+	width: 100%;
+}
+
+.brand-logo{
+	color: white;
+	position: relative;
+	float: left;
+	padding-left: 4px;
+	padding-bottom: 4px;
+}
+
+.brand-logo img{
+	width: 150px;
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 100px;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 17px 13px;
+	border-radius: 3px;
+}
+
+a.active, a:hover{
+	background: #ec407a;
+	transition: .5s;
+}
+
+.checkbtn{
+	font-size: 25px;
+	color: white;
+	float: right;
+	line-height: 100px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+.fa{
+	color: white;
+	padding-right: 4px;
+}
+
+@media (max-width: 952px){
+
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 700px){
+
+	.brand-logo{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.checkbtn{
+		display: block;
+	}
+
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		top: 140px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		z-index: 1;
+		overflow-x: hidden;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+
+	nav ul li a{
+		font-size: 19px;
+	}
+
+	a:hover, a.active{
+		background: none;
+		color: #ec407a;
+	}
+
+	#check:checked ~ul{
+		left: 0;
+	}
+
+	.fa{
+		font-size: 27px;
+		color: white;
+		padding-right: 4px;
+	}
+}
+
+@media only screen and (max-width:800px) {
+
+  .main {
+    background:  url("https://www.thecompleteuniversityguide.co.uk/media/4830503/istock-120872205.jpg");
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+
+  .menu, .main, .right {
+    background:  url("https://www.thecompleteuniversityguide.co.uk/media/4830503/istock-120872205.jpg");
+    width: 100%;
+  }
+}
+.quotes {
+	text-align: center;
+  font-size: 50px;
+  color: white;
+	display: inline;
+}
+
+.sub-head
+{
+	font-size: 35px;
+	color: white;
+	background-color: #0000009a;
+	display: inline;
+	border-radius: 10px;
+	padding: 5px;
+
+}
+#temp:hover{
+	background: #ec407a;
+	transition: .5s;
+}
+.flip-card {
+	background-color: transparent;
+	width: 250px;
+	height: 250px;
+	perspective: 1000px;
+  }
+
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	/* box-shadow: 0 4px 8px 0 rgba(255, 249, 249, 0.2); */
+  }
+
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+	/* background-color: rgba(26, 23, 23, 0.103); */
+	color: black;
+  }
+
+  .flip-card-back {
+	background-color: rgba(255, 255, 255, 0.74);
+	color: black;
+	font-weight: 700;
+	transform: rotateY(180deg);
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 3px;
+  }
+.card-image {
+	width:70%;
+	height:60%;
+}
+.card-front-content {
+	font-size: 35px;
+	color: white;
+}
+.container-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.content-card {
+	padding: 5px;
+	cursor: pointer;
+
+}
+.flip-card:hover {
+	box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.808);
+}
+.about-ms {
+	/* background-color: rgba(0, 0, 0, 0.527); */
+	/* color: white; */
+	background-color: rgba(255, 255, 255, 0.658);
+	color: black;
+	font-size: 20px;
+	padding: 10px;
+	width: 95%;
+	margin: auto;
+	border-radius: 10px;
+}
+.about-ms:hover {
+	box-shadow: 0 0 7px 0 rgba(255, 255, 255, 0.808);
+	border-radius: 10px;
+	border: solid 3px rgba(255, 255, 255, 0.178);
+
+}
+.card-content {
+	margin: auto;
+	padding: 5px;
+	color: black;
+}
+.post-slider {
+	min-width: 700px;
+	height: 270px;
+  width: 90%;
+	background-color: rgba(0, 0, 0, 0.678);
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.post-wrapper {
+    background-color: rgba(0, 0, 0, 0.651);
+    overflow: hidden;
+    width: 85%;
+    height: 200px;
+    margin: 0 auto;
+    #position: relative;
+}
+
+.post {
+    width: 110px;
+    height: 150px;
+    #position: relative;
+    top: 1px;
+    display: inline-block;
+    margin: 0 10px;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 10px;
+    /* box-shadow: 1rem 1rem 1rem -1rem rgb(255, 255, 255); */
+    /* padding: 0; */
+
+}
+/* .post:hover {
+
+	box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+	border-radius: 10px;
+	border: solid 3px rgba(255, 255, 255, 0.397);
+} */
+.post-img {
+    #position: relative;
+    height: 110px;
+	width: 60%;
+	left: 30%;
+	top: 7px;
+  border-radius: 10px;
+
+}
+.post-img:hover {
+	box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+	border-radius: 10px;
+	border: solid 3px rgba(255, 255, 255, 0.397);
+}
+.arrows{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.next {
+		line-height: 30px;
+		margin-top: 10px;
+}
+.prev {
+		line-height: 30px;
+		margin-top: 10px;
+}
+.post-p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px;
+    margin: 4px;
+		left: 5px;
+    color: palevioletred;
+
+}
+.slick-list {
+    height: 200px;
+}
+.slick-track {
+    height: 200px;
+}
+/* .sub-head-show {
+	display: none;
+}
+.hidden {
+	display: none;
+} */
+.hidden-div {
+	display: none;
+}
+.hidden:not(.sub-head) {
+
+	color: black;
+	background-color: rgba(255, 255, 255, 0.658);
+}
+.hidden-content:hover {
+	box-shadow: 0 0 7px 0 rgba(255, 255, 255, 0.808);
+	border-radius: 10px;
+	border: solid 3px rgba(255, 255, 255, 0.178);
+}
+.hidden-content {
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	width: 95%;
+	margin: auto;
+}
+.what {
+	color: white;
+}
+.toefl-table {
+	margin: 0 auto;
+	min-width: 700px;
+	text-align: center;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+.toefl-table th,td,p {
+	padding: 5px;
+	/* border: 1px solid black; */
+}
+.toefl-table td {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+}
+.toefl-table th {
+	border-right: 1px solid black;
+}

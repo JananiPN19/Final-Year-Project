@@ -1,0 +1,507 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="{% static 'home.js' %}"></script>
+<body>
+	<br><br>
+	<div id="temp">
+	<h1 class="quotes first">Work Hard...</h1>
+	<br>
+	<h1 class="quotes second">Dream Big...</h1></div>
+	<br><br><br><br>
+	<h3 class="sub-head">About MS Forecast</h3>
+	<br><br><br>
+	<div class="about-ms">
+		<b>
+
+			MS Forecast helps Indian students in their journey towards MS in aboard. Every year, the number of students
+			wanting to pursue higher studies in abroad
+			especially in US is more and they find difficult
+			to search the best university. And thus, this
+			site helps on predicting the eligibility of
+			Indian students getting admission in best
+			university based on their Test attributes like
+			GRE,TOEFL,CGPA, Research papers
+			published etc. According to their scores the
+			possibilities of chance of admit is calculated.
+			This site uses various algorithm for predicting the output which helps
+			them to admit in the best university and also
+			helps the student to find the possibility of
+			admitting in other universities based on their
+			scores.
+		</b>
+	</div>
+	<br><br><br><br>
+	<h3 class="sub-head">Exams</h3>
+	<br><br>
+	<div class="container-card">
+		<div class="content-card hide-content-tofel">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="{% static 'graduate.svg' %}" alt="Avatar"  class="card-image tofel">
+					<br>
+					<p class="card-front-content">TOEFL</p>
+					<p class="what">What is TOEFL?</p>
+				  </div>
+				  <div class="flip-card-back">
+					<h1>TOEFL</h1>
+					<p class="card-content">The TOEFL test will be of 3 hours. The test will still be scored on a 0–30 scale for each section, and 0–120 for the total score. Each section will have equal weightage.</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="content-card hide-content-gre">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="{% static 'graduate.svg' %}" alt="Avatar"  class="card-image gre">
+					<br>
+					<p class="card-front-content">GRE</p>
+					<p class="what">What is GRE?</p>
+				  </div>
+				  <div class="flip-card-back">
+					<h1>GRE</h1>
+					<p class="card-content">The GRE Test is a test that is a requirement for most of the masters and doctoral degree programs in most of the universities of the US, UK, Germany, and Canada. The exams are developed and administered by Educational Testing Services (ETS).
+					</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="content-card hide-content-cgpa">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="{% static 'graduate.svg' %}" alt="Avatar"  class="card-image cgpa">
+					<br>
+					<p class="card-front-content">CGPA</p>
+					<p class="what">What is CGPA?</p>
+				  </div>
+				  <div class="flip-card-back">
+					<h1>CGPA</h1>
+					<p class="card-content">CGPA means Cumulative Grade Point Average. Cumulative Grade Point Average (CGPA) is the average of Grade Points obtained for all semesters and courses completed up to a given academic term, whereas the Grade Point Average (GPA) may only refer to one term.</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="content-card hide-content-research">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<img src="{% static 'graduate.svg' %}" alt="Avatar"  class="card-image research">
+					<br>
+					<p class="card-front-content">RESEARCH</p>
+					<p class="what">What is Research?</p>
+				  </div>
+				  <div class="flip-card-back">
+					<h1>RESEACRH</h1>
+					<p class="card-content">Research is a careful and detailed study into a specific problem, concern, or issue using the scientific method. It's the adult form of the science fair projects back in elementary school, where you try and learn something by performing an experiment.
+					</p>
+						 <!-- This is best accomplished by turning the issue into a question, with the intent of the research to answer the question. -->
+				  </div>
+				</div>
+			</div>
+
+	</div>
+	</div>
+	<br>
+	<br>
+	<br><br>
+
+	<!-- Div hidden opened when card is clicked -->
+
+	<div class="hidden-div hidden-div-tofel">
+
+		<h3 class="sub-head sub-head-show hidden">More:</h3>
+		<br> <br><br>
+		<div class="hidden-tofel hidden hidden-content ">
+			<h1>TOEFL ( Test of English as a Foreign Language )</h1>
+			<br>
+			<p class="details">
+				TOEFL otherwise known as Test of English as a Foreign Language. Lets see the structure and pattern of TOEFL for you to get more knowledge about TOEFL.
+			</p>
+			<br>
+			<h3>Structure of TOEFL</h3><br>
+			<p class="details">
+				The TOEFL test will be of 3 hours. The test will still be scored on a 0–30 scale for each section, and 0–120 for the total score. Each section will have equal weightage.
+			</p>
+			<br>
+			<h3>TOEFL comprises of four sections:</h3>
+			<br>
+			<p class="details">
+				<ol>
+					<li>1.Reading</li>
+					<li>2.Listening</li>
+					<li>3.Speaking</li>
+					<li>4.Writing</li>
+				</ol>
+			</p>
+			<br>
+			<table class="toefl-table">
+				<tr>
+					<th><h3 class="blank">Task</h3></th>
+					<th><h3 class="blank">Description</h3></th>
+					<th ><h3 class="blank">Time</h3></th>
+				</tr>
+				<tr>
+					<td><b>READING</b></td>
+					<td>
+						<p>Short format: 3 passages, each with 10 questions</p>
+						<p>Long format: 4 passages, each with 10 questions</p>
+					</td>
+					<td >
+						<p>54 mins</p>
+						<p>72 mins</p>
+					</td>
+				</tr>
+				<tr >
+					<td><b>LISTENING</b></td>
+					<td>
+						<p>Short format: 2 conversations & 3 Lectures, each with 5-6 questions</p>
+						<p>Long format: 3 conversations & 4 Lectures, each with 5-6 questions</p>
+					</td>
+					<td >
+						<p>41 mins</p>
+						<p>57 mins</p>
+					</td>
+				</tr>
+				<tr >
+					<td><b>BREAK</b></td>
+					<td>-</td>
+					<td >10 mins</td>
+				</tr>
+				<tr >
+					<td><b>SPEAKING</b></td>
+					<td>4 tasks and 4 questions</td>
+					<td >17 mins</td>
+				</tr>
+				<tr >
+					<td><b>WRITING</b></td>
+					<td>
+						<p>Integrated Essay</p>
+						<p>Independent Essay</p>
+					</td>
+					<td >
+						<p>20 mins</p>
+						<p>30 mins</p>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<h4>Note: </h4><i>If you get Short format in Reading, then you will get Long format in Listening or the other way round.
+			</i>
+			<br><br>
+			<h3>Reading:</h3><br>
+			<p class="details">
+				The TOEFL Reading section is very similar to the RC section in GRE, with the only difference being that this one is VERY simple. There can be two formats in Reading: Short format or Long format.
+			</p>
+			<p class="details">
+				<h5>Short format:</h5>
+				It consists of 3 passages each approximately 700 words in length and with 10 questions and overall time is 54 minutes. The passages are on academic topics.
+			</p>
+			<p class="details">
+				<h5>Long format</h5>
+				It is 72 minutes duration and has 4 passages each approximately 700 words in length and with 10 questions. Of the 4 passages only 3 will be evaluated to get your score, the other 1 are experimental and do not matter at all. However, you have no idea which ones will matter and which ones won’t, so you have to give your best in all.
+			</p>
+			<h3>Listening:</h3><br>
+			<p class="details">
+				The TOEFL Listening section is a section for most of the students and it tests the student’s listening skills. In this section you have to listen to entire conversations (A conversation involves two speakers, a student and either a professor or a campus service provider) or lectures at one go (which can be very boring). Again there can be two formats: Short or Long format.
+			</p>
+			<p class="details">
+				<h5>Short format:</h5>
+				It consists of two conversations and three lectures each having 5-6 questions. Overall duration is 25-30 minutes.
+			</p>
+			<p class="details">
+				<h5>Long format:</h5>
+				It consists of three conversations and four lectures each having 5-6 questions, of which two conversations and four lectures only will contribute to your score. The remaining are redundant but again you are kept in the dark about this, so give your best in all. Overall duration is 100 minutes.
+			</p>
+			<h4>Note: </h4><i>If you get Short format in Reading, you will get Long format in Listening or the other way round.
+			</i>
+			<br><br>
+			<h3>Speaking:</h3>
+			<br>
+			<p class="details">
+				The TOEFL Speaking section tests the ability to communicate in English in an academic setting. It has four tasks. Tasks 1 will prompt you to speak on some familiar topic like a personal experience. You are given 10-15 seconds to think and another 30 seconds to speak on each of the questions. Tasks 2 & 3 require you to read a paragraph, followed by listening to a short conversation and then respond to a question about what you read and heard. In the next one question (campus situation) you have to listen to an audio clip, remember the important points in it and then answer the questions based on it in 45-60 seconds. Overall duration of this section is 17 minutes.
+			</p>
+			<br>
+			<h3>Writing:</h3>
+			<p class="details">
+				Although the TOEFL Writing section is quite a different section, it should be comfortable section for those who have already appeared for GRE. You are required to write two essays: Integrated Essay and Independent Essay.
+			</p>
+			<p class="details">
+				<h5>Integrated Essay:</h5>
+				It consists of two conversations and three lectures each having 5-6 questions. Overall duration is 25-30 minutes.
+			</p>
+			<p class="details">
+				<h5>Independent Essay:</h5>
+				In the independent task, you must write an essay that states, explains, and supports your opinion on an issue, supporting your opinions or choices, rather than simply listing personal preferences or choices. You are given 30 minutes for writing this in about 300-350 words.
+		 </p>
+		</div>
+	</div>
+
+
+
+
+	<div class="hidden-div hidden-div-gre">
+		<h3 class="sub-head sub-head-show hidden">More:</h3>
+		<br> <br><br>
+		<div class="hidden-gre hidden hidden-content">
+			<h3>What is GRE?</h3>
+			<br>
+			<p class="details">
+				The Graduate Record Examination (GRE) Revised General Test is a test that is a requirement for most of the masters and doctoral degree programs in most of the universities of the US, UK, Germany, and Canada. The exams are developed and administered by Educational Testing Services (ETS).
+			</p>
+			<h3>What are the prerequisites for GRE?</h3>
+			<br>
+			<p class="details">
+				There are no official prerequisites for taking this exam and it is intended for undergraduate students and bachelor’s degree graduated students. It is offered almost everywhere in the world in only one language- English.
+			</p>
+			<p class="details">
+				There are no official prerequisites for taking this exam and it is intended for undergraduate students and bachelor’s degree graduated students. It is offered almost everywhere in the world in only one language- English.
+			</p>
+			<h3>What’s the purpose of GRE Exam?</h3>
+			<br>
+			<p class="details">
+				According to the ETS, the GRE intends to measure the analytical, quantitative, verbal, and critical thinking skills of a test-taker. Broadly speaking, the GRE questions are based on concepts from the basic Maths, verbal logic, and vocabulary.
+			</p>
+			<h3>What’s the cost for GRE Exam?</h3><br>
+			<p class="details">
+				The cost of taking the test is 205 US Dollars (Although, it might vary based on the country). ETS also offers financial aid to students who prove economic hardship.
+			</p>
+			<h3>GRE Subject Tests</h3>
+			<br>
+			<p class="details">
+				In addition to the GRE Revised General Test, ETS also offers GRE Subject Tests that test your knowledge in a particular field of study which include Biology, Chemistry, Literature in English, Mathematics, Physics, and Psychology. It must be noted that, the GRE Subject Tests are not a necessary requirement for admission to universities.
+			</p>
+
+
+		</div>
+	</div>
+
+
+	<div class="hidden-div hidden-div-cgpa">
+		<h3 class="sub-head sub-head-show hidden">More:</h3>
+		<br> <br><br>
+		<div class="hidden-cgpa hidden hidden-content">
+			<h1>CGPA ( Cumulative Grade Point Average ) </h1>
+			<br>
+			<p class="details">CGPA stands for Cumulative Grade Point Average. It is the average of Grade Points obtained in all the subjects in college To know your cgpa percentage multiple by 9.5 with the overall result. When you’re enrolled in a Bachelor’s or Master’s programme, your GPA is easily one of the most important numbers to keep an eye on. </p>
+			<p class="details">
+				Your GPA, or Grade Point Average, is a number that indicates how well or how high you scored in your courses on average. It’s meant to score you (usually on a GPA scale between 1.0 and 4.0) during your studies and shows whether your overall grades have been high or low. This number is then used to assess whether you meet the standards and expectations set by the degree programme or university.
+			</p>
+		</div>
+	</div>
+
+	<div class="hidden-div hidden-div-research">
+		<h3 class="sub-head sub-head-show hidden">More:</h3>
+		<br> <br><br>
+		<div class="hidden-research hidden hidden-content">
+			<h1>RESEARCH</h1>
+			<br>
+			<p class="details">
+				Tertiary education is indeed a big investment, so looking for the right university takes time, patience, and dedication. In case you hadn’t noticed, most universities tend to highlight research as one of their most distinguished and competitive strengths. But the question here is why?
+			</p>
+			<p class="details">
+				From an individual point of view, the advantages of research extend beyond having an impressive degree certificate. Through detailed research, students develop critical thinking expertise, as well as effective analytical, research, and communication skills that are globally sought-after and incredibly beneficial. Ultimately, research is essential to economic and social development of our globalised society, forming the foundations governmental policies around the world.
+			</p>
+			<p class="details">
+				“Knowledge generated by research is the basis of sustainable development, which requires that knowledge be placed at the service of development, be converted into applications, and be shared to ensure widespread benefits,”
+			</p>
+		</div>
+	</div>
+
+	<br><br><br><br><br><br><br><br>
+	<br>
+	<footer>
+
+		<h3 class="sub-head">Universities</h3>
+		<br><br>
+		<div class="post-slider">
+			<img src="{% static 'back.svg' %}" alt="previous" class="arrows prev">
+			<img src="{% static 'arrow.svg' %}" alt="next" class="arrows next">
+
+			<div class="post-wrapper">
+			  <div class="post">
+				<img src="{% static 'logos/australian-national-university.jpg' %}" alt="australian-national-university" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">ANU</p>
+				  <!-- <p class="post-p">Australian National University (ANU)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/california_berkeley_logo.jpg' %}" alt="california_berkeley_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">UC Berkeley</p>
+				  <!-- <p class="post-p">University of California – Berkeley (UC Berkeley)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/Eindhoven-University-of-Technology_logo.jpg' %}" alt="Eindhoven-University-of-Technology_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">Tue</p>
+				  <!-- <p class="post-p">Eindhoven University of Technology (Tue)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/eth-zurich-logo.jpg' %}" alt="eth-zurich-logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">ETHZ</p>
+				  <!-- <p class="post-p">ETH Zurich (ETHZ)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/georgia_tech_logo.jpg' %}" alt="georgia_tech_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">GaTech</p>
+				  <!-- <p class="post-p">Georgia Institute of Technology (GaTech)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/harvard_university_logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">Harvard</p>
+				  <!-- <p class="post-p">Harvard University (Harvard)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/Imperial_college_london_logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">Imperial</p>
+				  <!-- <p class="post-p">Imperial College London (Imperial)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/london-business-school-logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">LBS</p>
+				  <!-- <p class="post-p">London Business School (LBS)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/mcgill-university-montreal.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">McGill</p>
+				  <!-- <p class="post-p">McGill University, Montreal (McGill)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/mit_logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">MIT</p>
+				  <!-- <p class="post-p">Massachusetts Institute of Technology (MIT)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/monash-university-melbourne.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">Monash</p>
+				  <!-- <p class="post-p">Monash University, Melbourne (Monash)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/National-University-of-Singapore.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">NUS</p>
+				  <!-- <p class="post-p">National University Of Singapore (NUS)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/NTU_logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">NTU</p>
+				  <!-- <p class="post-p">Nanyang Technological University (NTU)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/stanford_university_logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">Stanford</p>
+				  <!-- <p class="post-p">Stanford University (Stanford)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/the-university-of-british-columbia-vancouver.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">UBC Vancouver</p>
+				  <!-- <p class="post-p">The University of British Columbia, Vancouver (UBC Vancouver)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/TU_Delft_logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">TU Delft</p>
+				  <!-- <p class="post-p">Delft University of Technology (TU Delft)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/university-of-bath-logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">Bath</p>
+				  <!-- <p class="post-p">University of Bath (Bath)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/university-of-glasgow-logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">GLA</p>
+				  <!-- <p class="post-p">University of Glasgow (GLA)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/university-of-melbourne.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">Uni Melb</p>
+				  <!-- <p class="post-p">University of Melbourne (Uni Melb)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/university-of-new-south-wales-sydney.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">UNSW</p>
+				  <!-- <p class="post-p">University of New South Wales, Sydney (UNSW)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/university-of-st-gallen-logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">UNISG</p>
+				  <!-- <p class="post-p">University of St. Gallen (UNISG)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/university-of-sydney.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">USYD</p>
+				  <!-- <p class="post-p">University of Sydney (USYD)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/university-of-toronto.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">U Toronto</p>
+				  <!-- <p class="post-p">University of Toronto (U Toronto)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/university-of-waterloo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">U Waterloo</p>
+				  <!-- <p class="post-p">University of Waterloo (U Waterloo)</p> -->
+				</div>
+			  </div>
+			  <div class="post">
+				<img src="{% static 'logos/University_of_Cambridge_logo.jpg' %}" alt="harvard_university_logo" class="post-img">
+				<div class="post-info">
+				  <p class="post-p">Cambridge</p>
+				  <!-- <p class="post-p">University of Cambridge (Cambridge)</p> -->
+				</div>
+			  </div>
+			</div>
+
+		  </div>
+
+	</footer>
+	{% endblock %}

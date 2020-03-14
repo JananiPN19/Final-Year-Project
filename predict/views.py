@@ -6,6 +6,12 @@ import pickle
 
 # Create your views here.
 
+def index(request):
+    return render(request, 'index-page.html', {})
+
+def home(request):
+    return render(request, 'home.html', {})
+
 def gre(request):
     return render(request, 'predict/gre_predict.html', {})
 

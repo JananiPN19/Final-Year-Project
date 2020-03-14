@@ -19,5 +19,5 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('gre_predict/',include('predict.urls')),
+    path('',include('predict.urls')),
 ]
