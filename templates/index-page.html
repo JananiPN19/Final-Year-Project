@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'index-page.css' %}" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'predict/favicon-32x32.png' %}">
 	  <link rel="manifest" href="/site.webmanifest">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -18,14 +19,14 @@
   <div class="welcome-message" data-aos="fade-up" data-aos-duration="2000">
   <p> Hey there! Are you interested in higher studies? <br>
       Are you interested in MS? <br>
-    Want to know about your matching MS schools in US? <br>
-    Come and take a look at our site. </p>
+      Want to know about your matching MS schools in US? <br>
+      Come and take a look at our site. <i class="em-svg em-point_down" aria-role="presentation" aria-label="WHITE DOWN POINTING BACKHAND INDEX"></i> </p>
 </div>
 <div class="site-ad">
   <img src="{% static 'predict/myprojlogo1.png' %}" alt="MS Forecast" data-aos="fade-up" data-aos-duration="1500">
-  <p data-aos="fade-left" data-aos-duration="1500"> MS Forecast - Go and get your matching universities.</p><i class="fa fa-graduation-cap" style="font-size: 22px;"></i>
+  <p data-aos="fade-left" data-aos-duration="1500"> MS Forecast - Go and get your matching universities <i class="em-svg em-mortar_board" aria-role="presentation" aria-label="GRADUATION CAP"></i></p>
   <div class="button">
-  <a href="home" class="to_home"> Get Started </a>
+  <a href="home" class="to_home" data-aos="fade-right" data-aos-duration="1700" > Get Started </a>
 </div>
 </div>
 <script>

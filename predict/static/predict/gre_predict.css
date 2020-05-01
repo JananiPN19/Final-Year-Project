@@ -30,6 +30,7 @@ nav{
 	float: left;
 	padding-left: 4px;
 	padding-bottom: 4px;
+	cursor: pointer;
 }
 
 .brand-logo img{

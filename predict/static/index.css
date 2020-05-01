@@ -8,11 +8,10 @@
 }
 
 body{
-	background: linear-gradient(135deg,rgba(15,35,25,0.35),rgba(15,35,25,0.7)),url("C:\\Users\\P.Janani\\Desktop\\GAP\\predict\\static\\graduates.jpeg");
+	background: linear-gradient(135deg,rgba(15,35,25,0.35),rgba(15,35,25,0.7)), url("graduates.jpeg") no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
 	font-size: 30px;
 	text-align: center;
 	height: 1000px;
@@ -32,14 +31,19 @@ p{
 .site-ad{
 	margin: 2rem;
 	padding: 1rem;
+	text-align: center;
 }
 
 .button{
-	padding: 10px;
-	border-radius: 5px;
+	cursor: pointer;
+	font-size: 25px;
 	background: #ec407a;
+	padding: 10px;
+	margin: 20px auto;
+	border-radius: 14px;
+	width: 200px;
 }
 
-.to_home{
-	color: white;
+.button a{
+	 color: white;
 }
