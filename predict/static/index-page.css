@@ -1,4 +1,3 @@
-
 *{
 	font-family: 'Work Sans', sans-serif;
 	padding: 0;
@@ -6,45 +5,41 @@
 	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
-	text-align: center;
 }
+
 body{
-	background: linear-gradient(rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.219)),url("wallpaper.jpeg") no-repeat;
+	background: linear-gradient(135deg,rgba(15,35,25,0.35),rgba(15,35,25,0.7)),url("C:\\Users\\P.Janani\\Desktop\\GAP\\predict\\static\\graduates.jpeg");
 	background-attachment: fixed;
 	background-size: cover;
-	height: 1024px;
 	background-position: center;
+	background-repeat: no-repeat;
+	font-size: 30px;
+	text-align: center;
+	height: 1000px;
+	color: white;
 }
-.goto-home {
-    font-size: 50px;
-    /*transform: translate(-50%, -50%);*/
-    color: black;
-    background-color: rgba(255, 255, 255, 0.479);
-    padding: 30px;
-		margin: 0 auto;
-		margin-top: 20px;
-    border-radius: 50px;
-    font-weight: 700;
+
+.welcome-message{
+	margin-top: 275px;
+	margin-bottom: 30px;
+	padding: 1rem;
 }
-.goto-home:hover {
-    background-color: rgba(255, 255, 255, 0.753);
+
+p{
+	padding: 1rem;
 }
-.goto-home a {
-    text-decoration: none;
+
+.site-ad{
+	margin: 2rem;
+	padding: 1rem;
 }
-.heading {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.658);
-    border-radius: 30px;
-    padding: 3rem;
-		width: 75%;
-		height: 25%;
-    /*position: absolute;
-    top: 40%;
-    left: 50%;*/
-		margin: 0 auto;
-    #transform: translate(-50%, -50%);
+
+.button{
+	padding: 10px;
+	border-radius: 5px;
+	background: #ec407a;
 }
-.heading:hover {
-    background-color: rgba(0, 0, 0, 0.74);
+
+.to_home{
+	color: white;
 }

@@ -29,7 +29,7 @@ def gre_predict(request):
         df.drop(['SOP'],axis=1,inplace=True)
         df.drop(['LOR '],axis=1,inplace=True)
         df=df.rename(columns = {'Chance of Admit ':'Chance of Admit'})
-        df['Chance of Admit'] = np.where(df['Chance of Admit']>0.5,1,0)
+        df['Chance of Admit'] = np.where(df['Chance of Admit']>0.8,1,0)
         column_list = df.columns
 
         data = {'column_list': column_list}

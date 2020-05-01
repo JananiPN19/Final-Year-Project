@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'index-page.css' %}">
+    <link rel="stylesheet" href="{% static 'index-page.css' %}" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'predict/favicon-32x32.png' %}">
-	<link rel="manifest" href="/site.webmanifest">
+	  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'predict/favicon-32x32.png' %}">
+	  <link rel="manifest" href="/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <h1 class="heading"> MS Forecast - forecasting your MS admissions. </h1>
-    <a href="home" class="goto-home">Get Started</a>
+  <div class="welcome-message" data-aos="fade-up" data-aos-duration="2000">
+  <p> Hey there! Are you interested in higher studies? <br>
+      Are you interested in MS? <br>
+    Want to know about your matching MS schools in US? <br>
+    Come and take a look at our site. </p>
+</div>
+<div class="site-ad">
+  <img src="{% static 'predict/myprojlogo1.png' %}" alt="MS Forecast" data-aos="fade-up" data-aos-duration="1500">
+  <p data-aos="fade-left" data-aos-duration="1500"> MS Forecast - Go and get your matching universities.</p><i class="fa fa-graduation-cap" style="font-size: 22px;"></i>
+  <div class="button">
+  <a href="home" class="to_home"> Get Started </a>
+</div>
+</div>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

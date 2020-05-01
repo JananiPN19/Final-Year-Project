@@ -7,11 +7,13 @@
   <script src="{% static 'home.js' %}"></script>
 <body>
 	<br><br>
-	<div id="temp">
+	<div id="temp" data-aos="fade-right" data-aos-duration="1500">
 	<h1 class="quotes first">Work Hard...</h1>
 	<br>
-	<h1 class="quotes second">Dream Big...</h1></div>
+	<h1 class="quotes second">Dream Big...</h1>
+	</div>
 	<br><br><br><br>
+	<div data-aos="fade-up" data-aos-duration="1500">
 	<h3 class="sub-head">About MS Forecast</h3>
 	<br><br><br>
 	<div class="about-ms">
@@ -34,7 +36,9 @@
 			scores.
 		</b>
 	</div>
+	</div>
 	<br><br><br><br>
+	<div data-aos="fade-up" data-aos-duration="1500">
 	<h3 class="sub-head">Exams</h3>
 	<br><br>
 	<div class="container-card">
@@ -97,7 +101,7 @@
 					<p class="what">What is Research?</p>
 				  </div>
 				  <div class="flip-card-back">
-					<h1>RESEACRH</h1>
+					<h1>RESEARCH</h1>
 					<p class="card-content">Research is a careful and detailed study into a specific problem, concern, or issue using the scientific method. It's the adult form of the science fair projects back in elementary school, where you try and learn something by performing an experiment.
 					</p>
 						 <!-- This is best accomplished by turning the issue into a question, with the intent of the research to answer the question. -->
@@ -312,10 +316,11 @@
 			</p>
 		</div>
 	</div>
+	</div>
 
 	<br><br><br><br><br><br><br><br>
 	<br>
-	<footer>
+	<footer data-aos="fade-up" data-aos-duration="1500">
 
 		<h3 class="sub-head">Universities</h3>
 		<br><br>
@@ -504,4 +509,7 @@
 		  </div>
 
 	</footer>
+	<script>
+		AOS.init();
+	</script>
 	{% endblock %}
