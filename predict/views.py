@@ -15,6 +15,9 @@ def home(request):
 def gre(request):
     return render(request, 'predict/gre_predict.html', {})
 
+def feedback(request):
+    return render(request, 'feedback.html', {})
+
 def gre_predict(request):
     global backend_gre
     if request.method == 'POST':

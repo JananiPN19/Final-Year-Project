@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <link rel="stylesheet" href="{% static 'feedback.css' %}">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="{% static 'feedback.js'%}"></script>
+
+    <br><br>
+    <br>
+    <br>
+
+    <!-- Feedback form starts -->
+
+    <div class="feedback__wrapper">
+        <div class="feedback__center">
+            <header class="titlewrapper">
+                <h1 class="titlewrapper__text">
+                    Your feedback our Response
+                </h1>
+                <div class="feedback__line"></div>
+            </header>
+            <br>
+                <label for="" class="feedback__text">First Name : <br>
+                    <input type="text" id="fname" class="feedback__input feedback__input--firstname" placeholder="First Name">
+                </label>
+                <p class="feedback__error feedback__error--firstname">Invalid First Name</p>
+                <label for="" class="feedback__text">Last Name :<br>
+                    <input type="text" id="lname" class="feedback__input feedback__input--lastname" placeholder="Last Name">
+                </label>
+                <p class="feedback__error feedback__error--lastname">Invalid Last Name</p>
+
+                <label for="" class="feedback__text">Email :<br>
+                    <input type="email" id="email" class="feedback__input feedback__input--email" placeholder="Email">
+                </label>
+                <p class="feedback__error feedback__error--email">Invalid Email</p>
+
+                <label for="" class="feedback__text">Comment :<br>
+                    <textarea id="comment" class="feedback__input feedback__input--comment" cols="30" rows="20" placeholder="Comment here..."></textarea>
+                </label>
+                <p class="feedback__error feedback__error--comment">Please enter the comment</p>
+                <button class="feedback__submit">Submit</button>
+
+                <p class="feedback__success">SUCCESS</p>
+            </div>
+    </div>
+{% endblock %}
