@@ -47,3 +47,12 @@ p{
 .button a{
 	 color: white;
 }
+
+footer{
+	font-size: 22px;
+}
+
+.code{
+	font-weight: 500;
+	color: white;
+}
