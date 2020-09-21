@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-   <link rel="stylesheet" href="{% static 'predict/gre_predict.css' %}">
+<link rel="stylesheet" href="{% static 'predict/gre_predict.css'%}"/>
+<script type="text/javascript" src="{% static 'predict/gre_predict.js' %}"></script>
 						<div id="hero-overlay">
 							<div class="login-page">
 								<img src="{% static 'predict/gra1.jpg' %}" class="avatar">
@@ -17,11 +18,9 @@
 										<p>University Rating</p>
 										<input type="text" name="univ_rating" id="" placeholder="Enter University Rating">
 										<p>Research</p>
-                    <label class="toggle__switch">
-                      <input type="checkbox" class="toggle__box" name="research">
-                      <span class="toggle__slider"></span>
-                    </label>
-                    <br><br>
+										<input type="text" name="research" id="" placeholder="Enter Research done">
 										<button class="button"><span>SUBMIT</span></button>
 									</form>
+                  </div>
+                  </div>
 	{% endblock %}

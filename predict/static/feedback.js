@@ -4,6 +4,7 @@ var emailRegex = /^([a-z0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})$/;
 
 window.onload = function()
 {
+    document.getElementById('tab3').style.backgroundColor = '#ec407a';
     document.getElementsByClassName('feedback__submit')[0].addEventListener('click' , submitFeedback);
 }
 
@@ -53,5 +54,4 @@ function submitFeedback()
             document.getElementsByClassName('feedback__error--comment')[0].style.display = 'none';
         }
     }
-
 }

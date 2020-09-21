@@ -42,7 +42,7 @@ def gre_predict(request):
 
         ds = pd.DataFrame(data1, index=[0])
 
-        loaded_model = pickle.load(open('predict\\static\\predict\\final_model.pkl', 'rb'))
+        loaded_model = pickle.load(open('predict\\static\\predict\\gap_model_saved.pkl', 'rb'))
         out = loaded_model.predict(X=ds)
 
         if out == 1:

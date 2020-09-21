@@ -61,6 +61,10 @@ a:active, a:hover{
 	transition: .5s;
 }
 
+#navlist li a.active{
+	background: #ec407a;
+}
+
 .checkbtn{
 	font-size: 25px;
 	color: white;
@@ -237,4 +241,9 @@ a:active, a:hover{
 
 .button a{
 	color: white;
+}
+
+.active {
+    color: white;
+    background-color: #ec407a;
 }

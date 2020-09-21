@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="{% static 'predict/favicon-32x32.png' %}">
+<script src="{% static 'base.js' %}"></script>
 <link rel="manifest" href="/site.webmanifest">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -18,10 +19,10 @@
     <i class="fa fa-bars"></i>
   </label>
   <a class="brand-logo" href="home"><img src="{% static 'predict/myprojlogo1.png' %}"></a>
-  <ul>
-    <li><a href="home"><i class="fa fa-home" style="font-size: 22px;"></i>Home</a></li>
-    <li><a href="gre"><i class="fa fa-graduation-cap" style="font-size: 22px;"></i>Predict MS</a></li>
-    <li><a href="feedback"><i class="fa fa-edit" style="font-size: 22px;"></i>Feedback</a></li>
+  <ul onclick="myfunction(event)" id="navList">
+    <li><a href="home" id="tab1"><i class="fa fa-home" style="font-size: 22px;"></i>Home</a></li>
+    <li><a href="gre" id="tab2"><i class="fa fa-graduation-cap" style="font-size: 22px;"></i>Predict MS</a></li>
+    <li><a href="feedback" id="tab3"><i class="fa fa-edit" style="font-size: 22px;"></i>Feedback</a></li>
   </ul>
 </nav>
   {% block content %}

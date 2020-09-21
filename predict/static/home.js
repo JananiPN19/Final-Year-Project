@@ -93,3 +93,7 @@ $(document).ready(function()
         }
     });
   })
+
+window.onload = function(){
+  document.getElementById('tab1').style.backgroundColor = '#ec407a';
+}

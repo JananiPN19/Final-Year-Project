@@ -15,7 +15,7 @@
 	border: 5px solid #ec407a;
   position:absolute;
   top:30%;
-  left:calc(50% - 50px);
+  left:calc(50% - 58px);
 	z-index: 1;
 }
 .form{
@@ -23,7 +23,7 @@
   position: absolute;
   background: rgba(238, 230, 235, 0.877);
   max-width: 360px;
-  transform:translate(-50%,-50%)
+  /*transform: translate(-50%,-50%);*/
   padding:45px;
   text-align: center;
 	border-radius: 20px;
@@ -59,6 +59,50 @@
 
 ::placeholder{
   color:black;
+}
+
+.center {
+    position: relative;
+}
+.controls__range {
+    -webkit-appearance: none;
+    height: 5px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    outline: none;
+    align-self: center;
+}
+.controls__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ec407a;
+    cursor: pointer;
+}
+.range__value {
+    background-color: #ff278c;
+    position: relative;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+.range__value::before {
+    content: '';
+    background-color: #ec407a;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    left: -7px;
+    width: 13px;
+    height: 13px;
 }
 
 .button {
@@ -143,4 +187,9 @@
 }
 .toggle__box:checked + .toggle__slider::before {
     transform: translate(30px);
+}
+.error {
+    color: red !important;
+    font-size: 15px !important;
+    display: none;
 }
