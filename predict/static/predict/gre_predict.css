@@ -188,8 +188,3 @@
 .toggle__box:checked + .toggle__slider::before {
     transform: translate(30px);
 }
-.error {
-    color: red !important;
-    font-size: 15px !important;
-    display: none;
-}

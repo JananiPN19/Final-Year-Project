@@ -16,11 +16,21 @@
 										<p>TOEFL Score</p>
 										<input type="text" name="toefl_score" id="" placeholder="Enter TOEFL Score">
 										<p>University Rating</p>
-										<input type="text" name="univ_rating" id="" placeholder="Enter University Rating">
+										<label class="center">
+											<input type="range" class="controls__range" min="0" step="1" max="5" name="univ_rating" value="0" onblur="getValue()"/>
+											<span name="0" class="range__value">0</span>
+										</label>
+										<br><br>
 										<p>Research</p>
-										<input type="text" name="research" id="" placeholder="Enter Research done">
-										<button class="button"><span>SUBMIT</span></button>
+										<label class="toggle__switch">
+											<input type="hidden" name="research" value="0"/>
+											<input type="checkbox" class="toggle__box" id="check" name="research" value="1"/>
+											<span class="toggle__slider"></span>
+										</label>
+										<br><br>
+										<button class="button" id="submit" ><span>SUBMIT</span></button>
 									</form>
                   </div>
+									</div>
                   </div>
 	{% endblock %}
