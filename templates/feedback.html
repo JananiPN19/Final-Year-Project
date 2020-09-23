@@ -11,7 +11,8 @@
     <br>
 
     <!-- Feedback form starts -->
-
+    <form method="POST" action="feedback">
+    {% csrf_token %}
     <div class="feedback__wrapper">
         <div class="feedback__center">
             <header class="titlewrapper">
@@ -22,21 +23,21 @@
             </header>
             <br>
                 <label for="" class="feedback__text">First Name : <br>
-                    <input type="text" id="fname" class="feedback__input feedback__input--firstname" placeholder="First Name">
+                    <input type="text" id="fname" name="fname" class="feedback__input feedback__input--firstname" placeholder="First Name">
                 </label>
                 <p class="feedback__error feedback__error--firstname">Invalid First Name</p>
                 <label for="" class="feedback__text">Last Name :<br>
-                    <input type="text" id="lname" class="feedback__input feedback__input--lastname" placeholder="Last Name">
+                    <input type="text" id="lname" name="lname" class="feedback__input feedback__input--lastname" placeholder="Last Name">
                 </label>
                 <p class="feedback__error feedback__error--lastname">Invalid Last Name</p>
 
                 <label for="" class="feedback__text">Email :<br>
-                    <input type="email" id="email" class="feedback__input feedback__input--email" placeholder="Email">
+                    <input type="email" id="email" name="email"class="feedback__input feedback__input--email" placeholder="Email">
                 </label>
                 <p class="feedback__error feedback__error--email">Invalid Email</p>
 
                 <label for="" class="feedback__text">Comment :<br>
-                    <textarea id="comment" class="feedback__input feedback__input--comment" cols="30" rows="20" placeholder="Comment here..."></textarea>
+                    <textarea id="comment" name="cmt" class="feedback__input feedback__input--comment" cols="30" rows="20" placeholder="Comment here..."></textarea>
                 </label>
                 <p class="feedback__error feedback__error--comment">Please enter the comment</p>
                 <button class="feedback__submit">Submit</button>
@@ -44,4 +45,5 @@
                 <p class="feedback__success">SUCCESS</p>
             </div>
     </div>
+    </form>
 {% endblock %}

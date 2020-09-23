@@ -4,6 +4,8 @@ import pandas as pd
 import numpy as np
 import pickle
 
+from .models import Feedback
+
 # Create your views here.
 
 def index(request):
@@ -16,6 +18,13 @@ def gre(request):
     return render(request, 'predict/gre_predict.html', {})
 
 def feedback(request):
+    if request.method == 'POST':
+        fb = Feedback()
+        fb.firstName = request.POST.get('fname')
+        fb.lastName = request.POST.get('lname')
+        fb.email = request.POST.get('email')
+        fb.feedBack = request.POST.get('cmt')
+        fb.save()
     return render(request, 'feedback.html', {})
 
 def gre_predict(request):
@@ -32,7 +41,7 @@ def gre_predict(request):
         df.drop(['SOP'],axis=1,inplace=True)
         df.drop(['LOR '],axis=1,inplace=True)
         df=df.rename(columns = {'Chance of Admit ':'Chance of Admit'})
-        df['Chance of Admit'] = np.where(df['Chance of Admit']>0.8,1,0)
+        df['Chance of Admit'] = np.where(df['Chance of Admit']>0.65,1,0)
         column_list = df.columns
 
         data = {'column_list': column_list}

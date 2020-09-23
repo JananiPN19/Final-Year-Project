@@ -1,6 +1,6 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import CollegeList
+from .models import Feedback
 
-admin.site.register(CollegeList)
+admin.site.register(Feedback)
